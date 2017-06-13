@@ -1,0 +1,83 @@
+Notes for learning Gulp and Zurb Foundation
+
+
+Installing Gulp
+  - sudo npm install gulp -g
+
+Creating Package.json file for Gulp project
+  - npm init
+  - npm install gulp --save-dev
+
+Gulp Tasks
+  - var gulp = require('gulp');
+  - gulp.task('hello', function() {
+      console.log('Hello Kyle');
+    });
+  - gulp.src = files needed for the task
+  - gulp.dest = where to output the files in completion
+
+Globbing in Node
+  - Checks for file names and paths for specified patterns
+  - *.scss = Any file ending with .scss
+  - **/*.scss = Any file ending with .scss in the root folder and any child directories
+  - !not-me.scss = Exclude files with matching patterns
+  - *.+(scss|sass) = Match multiple patterns
+
+SASS to CSS
+  - var sass = require('gulp-sass');
+  - Compiling SASS/SCSS into valid CSS
+
+Gulp Watch
+  - Compiles the files when changes are made
+
+BrowserSync
+  - var browserSync = require('browser-sync').create();
+  - This will reload the browser when changes are made to the pointed files.
+  - Using Gulp Watch will keep this updated
+  - Reload the browser when JS and HTML files are changed
+    • gulp.watch('app/js/**/*.js', browserSync.reload);
+    • gulp.watch('app/*.html', browserSync.reload);
+  - Adding .pipe(browserSync.reload) to 'sass' task
+
+
+Useref
+  - var useref = require('gulp-useref');
+  - Join together multiple scripts
+  - Improves performance for the site/application
+
+Minify & Uglify
+  - var cssmin = require('gulp-cssmin');
+  - var rename = require('gulp-rename');
+  - var uglify = require('gulp-uglify');
+  - var gulpIf = require('gulp-if');
+
+  - Reducing JavaScript scripts and improving site performance
+  - Minifying CSS files to improve performance
+
+Cache
+  - var cache = require('gulp-cache');
+
+Image Minify
+  - var imagemin = require('gulp-imagemin');
+  - imagemin will optimise the images
+
+Del
+  - var del = require('del');
+  - Delete Generated files inside dist
+  - Useful for keeping the directory and project files clean
+    (reducing chance of redundant files)
+
+runSequence
+  - var runSequence = require('run-sequence');
+  - Run multiple tasks into one
+    • Example:
+    gulp.task('default', function(callback) {
+      runSequence(['sass', 'browserSync', 'watch'], callback)
+    })
+
+
+
+Zurb Foundation
+
+Installing Foundation
+  - npm install foundation-cli --global
