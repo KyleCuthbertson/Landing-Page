@@ -9,6 +9,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
+
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -55,10 +56,5 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-body {
-  background-image: url("../img/1/slider-1.jpg");
-  background-repeat: no-repeat;
-  width: auto !important;
-  z-index: 0;
-  height: auto;
-}
+// Custom Styling Script
+@import 'custom.scss';
