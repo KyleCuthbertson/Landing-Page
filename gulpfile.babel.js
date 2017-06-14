@@ -9,7 +9,7 @@ import rimraf   from 'rimraf';
 import sherpa   from 'style-sherpa';
 import yaml     from 'js-yaml';
 import fs       from 'fs';
-
+require("babel-register");
 // Load all Gulp plugins into one variable
 const $ = plugins();
 

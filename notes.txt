@@ -81,3 +81,12 @@ Zurb Foundation
 
 Installing Foundation
   - npm install foundation-cli --global
+
+
+Grid
+  - Large, medium and small is representing the responsive classes.
+  - A row is made up of 12 columns
+  - Example: small-12, medium-6, large-3
+
+Alignment classes
+  - text-left, text-right, text-center and text-justify
