@@ -1,0 +1,29 @@
+{
+  "name": "foundation-font-awesome-buttons",
+  "version": "3.3.1",
+  "description": "Font Awesome support for Foundation buttons",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-sites-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zurb/foundation-sites/issues"
+  },
+  "author": "Josh Medeski <josh.medeski@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "foundation-font-awesome-buttons",
+  "authors": [
+    "Josh Medeski"
+  ],
+  "ignore": [
+    ".gitignore"
+  ],
+  "main": [
+    "scss/foundation-font-awesome-buttons.scss"
+  ],
+  "keywords": [
+    "foundation",
+    "font-awesome",
+    "fontawesome",
+    "button",
+    "buttons",
+    "sass",
+    "scss"
+  ],
+  "dependencies": {
+    "foundation-sites": "6.3.x",
+    "fontawesome": "4.7.x"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/joshmedeski/foundation-font-awesome-buttons",
+  "version": "3.3.1",
+  "_release": "3.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.3.1",
+    "commit": "9016d04d1d975ab05ac1cacad3d3ec07630eb9ee"
+  },
+  "_source": "https://github.com/joshmedeski/foundation-font-awesome-buttons.git",
+  "_target": "^3.3.1",
+  "_originalSource": "foundation-font-awesome-buttons",
+  "_direct": true
+}
