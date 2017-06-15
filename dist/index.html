@@ -7,58 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Task</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick/slick-theme.css"/>
   </head>
   <body>
 
     
-    
     <!-- Section 1 (Front) -->
-    <div class="row" id="wrapper">
-      <div class="small-12">
-        <div class="top-bar">
-          <!-- Logo -->
-          <div class="top-bar-left">
-            <img src="assets/img/1/logo.png" />
-          </div>
-    
-          <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Candidates</a></li>
-    
-              <li>  <!-- Drop Down -->
-                <a href="#">About</a>
-                <ul class="menu">
-                  <li><a href="#">Item 1</a></li>
-                  <li><a href="#">Item 2</a></li>
-                  <li><a href="#">Item 3</a></li>
-                </ul>
-              </li>
-    
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><button class="hollow button success" href="#">Sign in</button></li>  <!-- Button -->
-            </ul>
-          </div>
+    <section id="section-1-wrapper">
+      <div id="image-wrapper">
+        <!-- Slick Carousel -->
+        <div class="your-class">
+          <div><img src="assets/img/1/slider-1.jpg"/></div>
+          <div><img src="assets/img/1/slider-2.jpg"/></div>
+          <div><img src="assets/img/1/slider-3.jpg"/></div>
         </div>
       </div>
-    </div>
+      <div class="row" id="navigation-wrapper">
+          <div id="navigation-bar" class="top-bar small-12">
     
+            <!-- Logo -->
+            <div class="top-bar-left">
+              <img src="assets/img/1/logo.png" />
+            </div>
     
-    <div class="row">
-      <div class="small-8 small-offset-1 medium-6 large-4">
-        <div class="example-content text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-          qea. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-        </div>
+            <div class="top-bar-right">
+              <ul class="dropdown menu" data-dropdown-menu>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Candidates</a></li>
+    
+                <li>  <!-- Drop Down -->
+                  <a href="#">About</a>
+                  <ul class="menu">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul>
+                </li>
+    
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><button class="hollow button success" id="button-1" href="#">Sign in</button></li>  <!-- Button -->
+              </ul>
+            </div>
+          </div>
       </div>
-    </div>
+    </section>
+    
+    
+    
     
     
     <!-- Section 2 (About Us) -->
+    <section id="section-2-wrapper">
+      <div class="row">
+        <div class="small-12 small-offset">
+          <h1 class="section-2-title"><span class="bold-title">About</span> Us</h1>
+        </div>
+      </div>
+    </section>
+    
+    
     
     <!-- Section 3 (New Approach) -->
     
@@ -70,7 +80,24 @@
     
     <!-- Section 7 (Google Block) -->
     
+    
+    
+    <!-- Script Tags -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Carousel Script -->
+    <script>
+    $(document).ready(function(){
+      $('.your-class').slick({
+        arrow: false,
+        dots: true,
+        autoplay: true
+      });
+    });
+    </script>
+    
 
     <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/lib/slick/slick/slick.min.js"></script>
   </body>
 </html>
