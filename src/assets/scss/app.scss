@@ -4,11 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-
 
 @include foundation-global-styles;
 @include foundation-grid;

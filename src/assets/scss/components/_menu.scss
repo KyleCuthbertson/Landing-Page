@@ -208,12 +208,12 @@ $menu-item-background-hover: $light-gray !default;
   @if $nested-alignment == right {
     margin-#{$global-right}: $margin;
     margin-#{$global-left}: 0;
-  } 
+  }
   @else {
     margin-#{$global-right}: 0;
     margin-#{$global-left}: $margin;
   }
-  
+
 }
 
 /// Adds basic styles for icons in menus.
