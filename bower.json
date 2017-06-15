@@ -18,5 +18,8 @@
     "foundation-sites": "~6.3.0",
     "motion-ui": "~1.2.2"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "foundation-font-awesome-buttons": "^3.3.1"
+  }
 }
