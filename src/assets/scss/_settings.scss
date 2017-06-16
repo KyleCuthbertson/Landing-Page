@@ -61,6 +61,7 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+$green: #24be88;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'lato', sans-serif; // Added
@@ -218,13 +219,13 @@ $accordionmenu-arrow-size: 6px;
 // 9. Badge
 // --------
 
-$badge-background: $primary-color;
+$badge-background: $green;
 $badge-color: $white;
-$badge-color-alt: $black;
+$badge-color-alt: $white;
 $badge-palette: $foundation-palette;
-$badge-padding: 0.3em;
-$badge-minwidth: 2.1em;
-$badge-font-size: 0.6rem;
+$badge-padding: 1em;
+$badge-minwidth: 3.4em;
+$badge-font-size: 3rem;
 
 // 10. Breadcrumbs
 // ---------------
