@@ -252,7 +252,7 @@ $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: 1.5rem,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
@@ -343,7 +343,7 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: #FFFFFF;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
@@ -414,7 +414,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
