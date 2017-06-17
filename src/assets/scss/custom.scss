@@ -1,6 +1,6 @@
 
 
-// Mixins
+// Custom Mixins
 
 @mixin parallax {
   background-attachment: fixed;
@@ -9,6 +9,9 @@
   background-size: cover;
 }
 
+
+// Custom Variables
+$main-font: 'raleway', sans-serif;
 
 #section-1-wrapper {
   width: 100%;
@@ -192,16 +195,62 @@ span.badge {
 
 #section-4-wrapper {
   width: 100%;
-  height: 800px;
-  background-color: pink;
+  height: 650px;
 }
 
 .row .section-4-title {
-  text-align: center;
   font-size: 4em;
-  color: #FFFFFF;
-  font-family: 'raleway', sans-serif;
+  margin-top: 40px;
+  font-family: $main-font;
 }
+
+#section-4-wrapper .columns{
+  font-family: $main-font;
+}
+
+.card {
+  border-radius: 4px;
+  margin-top: 40px;
+  .card-divider {
+    background-color: #313231;
+    height: 300px;
+    padding-top: 30px;
+    p {
+      color: #FFFFFF;
+      font-weight: 900;
+    }
+  }
+}
+
+.plan-price-text {
+  color: #757676;
+  font-weight: 600;
+}
+
+.card-section {
+  height: 220px;
+
+// Card Titles i.e. Start Up, Enterprise etc.
+  h3 {
+    color: $green;
+    font-weight: 900;
+    font-size: 26px;
+    font-family: $main-font;
+  }
+  // Card Prices
+  h2 {
+    font-weight: 900;
+    font-family: $main-font;
+    font-size: 4.2em;
+  }
+  p {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+
 
 
 
