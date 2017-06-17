@@ -76,9 +76,7 @@
   font-weight: 600;
 }
 
-span.badge {
-  margin: 20px;
-}
+
 
 
 #chev-style {
@@ -112,16 +110,20 @@ span.badge {
 
 #section-2-wrapper {
   width: 100%;
-  height: 900px;
+  height: auto;
   padding-top: 60px;
+  .row {
+    margin-bottom: 10px;
+  }
 }
 
 .row .section-2-title {
-  text-align: center;
-  font-size: 6em;
+  font-size: 4.8em;
   color: #313231;
   font-family: 'raleway', sans-serif;
+  margin-bottom: 40px;
 }
+
 
 .bold-title {
   font-weight: 700;
@@ -131,13 +133,36 @@ span.badge {
   font-weight: 900;
 }
 
+span.badge {
+  margin: 15px;
+}
+
+.row .about-left-text {
+  margin-top: 20px;
+  h3 {
+    color: #24be88;
+    font-size: 23px;
+    font-weight: 900;
+  }
+}
+
+.row .about-right-text {
+  margin-top: 20px;
+  h3 {
+    color: #24be88;
+    font-size: 23px;
+    font-weight: 900;
+  }
+}
+
 
 /* Section 3 Styling */
 
 #section-3-wrapper {
   width: 100%;
-  height: 900px;
+  height: auto;
   padding-top: 60px;
+  margin-top: 60px;
   background-color: green;
 }
 
