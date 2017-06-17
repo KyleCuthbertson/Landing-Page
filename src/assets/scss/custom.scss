@@ -1,5 +1,15 @@
 
 
+// Mixins
+
+@mixin parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 #section-1-wrapper {
   width: 100%;
   height: 1050px;
@@ -11,7 +21,7 @@
     .your-class img {
       width: 100%;
       max-width: 100%;
-      max-height: 100%;
+      max-height: 1200px; /* Change to fit screen sizes */
       height: auto;
     }
   }
@@ -160,16 +170,55 @@ span.badge {
 
 #section-3-wrapper {
   width: 100%;
-  height: auto;
+  height: 750px;
   padding-top: 60px;
-  margin-top: 60px;
-  background-color: green;
+  margin-top: 3em;
+  background-image: url("../img/3/parallax-section.jpg");
+  @include parallax;
 }
 
 .row .section-3-title {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 4em;
   color: #FFFFFF;
   font-family: 'raleway', sans-serif;
   background-color: red;
+}
+
+
+
+/* Section 4 Styling */
+
+
+#section-4-wrapper {
+  width: 100%;
+  height: 800px;
+  background-color: pink;
+}
+
+.row .section-4-title {
+  text-align: center;
+  font-size: 4em;
+  color: #FFFFFF;
+  font-family: 'raleway', sans-serif;
+}
+
+
+
+
+/* Section 5 Styling */
+#section-5-wrapper {
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/5/parallax-section-two.jpg");
+  @include parallax;
+}
+
+
+
+/* Section 6 Styling */
+#section-6-wrapper {
+  width: 100%;
+  height: 800px;
+  background-color: purple;
 }
