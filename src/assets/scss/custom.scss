@@ -1,7 +1,6 @@
 
 
 // Custom Mixins
-
 @mixin parallax {
   background-attachment: fixed;
   background-position: center;
@@ -15,16 +14,15 @@ $main-font: 'raleway', sans-serif;
 
 #section-1-wrapper {
   width: 100%;
-  height: 1050px;
-  z-index: -99;
-
+  height: auto;
+  //z-index: -99;
   #image-wrapper {
     width: 100%;
     height: 100%;
     .your-class img {
       width: 100%;
       max-width: 100%;
-      max-height: 1200px; /* Change to fit screen sizes */
+      max-height: 1100px;
       height: auto;
     }
   }
@@ -126,7 +124,7 @@ $main-font: 'raleway', sans-serif;
   height: auto;
   padding-top: 60px;
   .row {
-    margin-bottom: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -147,23 +145,25 @@ $main-font: 'raleway', sans-serif;
 }
 
 span.badge {
-  margin: 15px;
+  margin: 10px;
 }
 
 .row .about-left-text {
   margin-top: 20px;
+  font-family: $main-font;
   h3 {
     color: #24be88;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 900;
   }
 }
 
 .row .about-right-text {
   margin-top: 20px;
+  font-family: $main-font;
   h3 {
     color: #24be88;
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 900;
   }
 }
@@ -173,7 +173,8 @@ span.badge {
 
 #section-3-wrapper {
   width: 100%;
-  height: 750px;
+  height: 600px;
+  max-height: 700px;
   padding-top: 60px;
   margin-top: 3em;
   background-image: url("../img/3/parallax-section.jpg");
@@ -182,12 +183,25 @@ span.badge {
 
 .row .section-3-title {
   text-align: center;
-  font-size: 4em;
+  font-size: 5em;
   color: #FFFFFF;
+  margin-bottom: 30px;
   font-family: 'raleway', sans-serif;
-  background-color: red;
 }
 
+#section-3-left {
+  font-size: 2em;
+  color: $green;
+  line-height: 1.8;
+}
+
+#section-3-right {
+  font-size: 1.1em;
+  color: $white;
+  font-weight: 600;
+  padding-top: 12px;
+  line-height: 1.85;
+}
 
 
 /* Section 4 Styling */
@@ -196,12 +210,14 @@ span.badge {
 #section-4-wrapper {
   width: 100%;
   height: 650px;
+  padding-top: 60px;
 }
 
 .row .section-4-title {
   font-size: 4em;
-  margin-top: 40px;
   font-family: $main-font;
+  line-height: 1.2;
+  padding-bottom: 20px;
 }
 
 #section-4-wrapper .columns{
@@ -210,7 +226,6 @@ span.badge {
 
 .card {
   border-radius: 4px;
-  margin-top: 40px;
   .card-divider {
     background-color: #313231;
     height: 300px;
@@ -225,6 +240,7 @@ span.badge {
 .plan-price-text {
   color: #757676;
   font-weight: 600;
+  line-height: 1.8;
 }
 
 .card-section {
