@@ -7,6 +7,9 @@
 @import 'settings';
 @import 'foundation';
 
+@import '../../../bower_components/fontawesome/scss/font-awesome.scss'; // Font-awesome
+@import '../../../bower_components/foundation-font-awesome-buttons/src/_ffab.scss'; // Font-awesome
+
 @import 'motion-ui';
 
 @include foundation-global-styles;
@@ -51,6 +54,7 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
+@include ffab-everything; // Added Font Awesome
 
 @include motion-ui-transitions;
 @include motion-ui-animations;

@@ -40,6 +40,7 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
+//  38. Foundation Font Awesome Buttons
 
 @import 'util/util';
 
@@ -47,7 +48,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1600);
+$global-width: rem-calc(1600); // SORT THIS WIDTH OUT
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -620,3 +621,14 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+
+// 38. Foundation Font Awesome Buttons
+// - - - - - - - - - - - - - - - -
+$ffab-css-prefix: 'ffab';
+$ffab-default-position: 'after';
+$ffab-border-width: 0;
+$ffab-angle: 0;
+$ffab-transition-speed: 0.3s;
+$ffab-transition-behavior: 'remove'; // @options 'remove', 'cover' or 'none'
+$ffab-overlay-background-color: rgba(255, 255, 255, .1);
