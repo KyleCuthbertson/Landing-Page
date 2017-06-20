@@ -42,7 +42,7 @@
 
   <!-- Section 1 Title -->
   <div class="row">
-    <div id="section-1-title" class="small-5 columns">
+    <div id="section-1-title" class="small-12 columns">
       <h1>Staffing</h1>
       <h1><span class="bold-title">solutions</span> for you</h1>
     </div>
@@ -224,11 +224,48 @@
 
 <!-- Section 5 (Stats) -->
 <section id="section-5-wrapper">
-  <div class="row">
+  <div class="row text-center">
     <div class="small-12 columns">
-      <h1 class="section-5-title">New <span class="bolder-title">approach</span> to recruiting</h1>
+      <h1 class="section-5-title">Site <span class="bolder-title">stats</span></h1>
     </div>
   </div>
+
+  <!-- First Badge Set -->
+    <div class="row">
+      <div class="about-left-text text-right large-4 columns">
+        <h3>Excepteur sint occaecat</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+
+      <div class="large-4 columns text-center">
+        <span class="badge"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+        <span class="badge"><i class="fa fa-comments" aria-hidden="true"></i></span>
+      </div>
+
+      <div class="about-right-text text-left large-4 columns">
+        <h3>Sed do eiusmod</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+
+  <!-- Second Badge Set -->
+  <div class="row">
+    <div class="about-left-text text-right large-4 columns">
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+
+    <div class="large-4 columns text-center">
+      <span class="badge"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+      <span class="badge"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+    </div>
+
+    <div class="about-right-text text-left large-4 columns">
+      <h3>Tempour incididunt</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+  </div>
+
 </section>
 
 
@@ -281,10 +318,8 @@
 
         <!-- Form Buttons -->
         <div class="small-12 columns">
-          <div class="input-group">
-            <a href="#" id="button-text-style" class="button ffab fa-chevron-right large-3">Search a Job</a>
-            <a href="#" id="button-text-style" class="button ffab fa-chevron-right large-3">Post a Resume</a>
-          </div>
+          <a href="#" class="button ffab fa-envelope-o send-btn">Send</a>
+          <a href="#" class="button ffab fa-trash clear-btn">Clear</a>
         </div>
       </form>
 
@@ -300,12 +335,23 @@
 
 
 <!-- Section 7 (Google Block) -->
-
+<section id="section-7-wrapper">
+  <div id="map"></div>
+    <script type="text/javascript" src="assets/js/maps.js"></script>
+  <!-- API KEY -   AIzaSyCrz5gl3tBhppQfNcM6E1MLV4QR0-aX9Ys -->
+</section>
 
 
 <!-- Script Tags -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Google Maps Script -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrz5gl3tBhppQfNcM6E1MLV4QR0-aX9Ys&callback=initMap">
+</script>
+
+
 <!-- Carousel Script -->
 <script>
 $(document).ready(function(){
