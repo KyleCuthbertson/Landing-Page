@@ -1,0 +1,39 @@
+
+.svg {
+  circle {
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+    stroke: $white;
+    stroke-width: 0.7em;
+  }
+  .bar {
+    stroke: $green;
+    transition: stroke-dashoffset 1s linear;
+  }
+}
+
+.cont-class {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  transform: rotate(-90deg);
+  &:after {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    left: 50%;
+    top: 50%;
+    content: attr(data-pct)"%";
+    margin-top: -80px;
+    margin-left: -80px;
+    border-radius: 100%;
+    line-height: 150px;
+    transform: rotate(90deg);
+    font-size: 3.5em;
+    font-family: $main-font;
+    color: $green;
+  }
+}
