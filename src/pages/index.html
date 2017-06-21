@@ -182,6 +182,7 @@
           <p>Allows 5 Job Postings</p>
           <p>Highlighted Job Post</p>
           <p>Posted For 90 Days</p>
+          <a href="#" class="button ffab fa-chevron-right shop-now-btn">Shop now!</a>
         </div>
     </div>
   </div>
@@ -198,7 +199,7 @@
           <p>Allows 5 Job Postings</p>
           <p>Highlighted Job Post</p>
           <p>Posted For 90 Days</p>
-
+          <a href="#" class="button ffab fa-chevron-right shop-now-btn">Shop now!</a>
           </div>
       </div>
     </div>
@@ -215,6 +216,7 @@
           <p>Allows 5 Job Postings</p>
           <p>Highlighted Job Post</p>
           <p>Posted For 90 Days</p>
+          <a href="#" class="button ffab fa-chevron-right shop-now-btn">Shop now!</a>
           </div>
       </div>
     </div>
@@ -238,10 +240,19 @@
       </div>
 
       <div class="large-4 columns text-center">
-        <span class="badge"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-        <span class="badge"><i class="fa fa-comments" aria-hidden="true"></i></span>
+        <div id="cont" class="cont-class" data-pct="75">
+        <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+          <circle class="bar" id="bar1" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+        </svg>
+        </div>
+        <div id="cont2" class="cont-class" data-pct="25">
+          <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+            <circle class="bar" id="bar2" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+          </svg>
+          </div>
       </div>
-
       <div class="about-right-text text-left large-4 columns">
         <h3>Sed do eiusmod</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -256,10 +267,19 @@
     </div>
 
     <div class="large-4 columns text-center">
-      <span class="badge"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
-      <span class="badge"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+      <div id="cont3" class="cont-class" data-pct="50">
+      <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+        <circle class="bar" id="bar3" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+      </svg>
+      </div>
+      <div id="cont4" class="cont-class" data-pct="75">
+      <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+        <circle class="bar" id="bar4" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+      </svg>
+      </div>
     </div>
-
     <div class="about-right-text text-left large-4 columns">
       <h3>Tempour incididunt</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -326,18 +346,18 @@
     </div>
   </div>
 
-  <div class="row">
-    <footer class="small-12 columns text-center">
+  <footer class="row">
+    <div class="small-12 columns text-center">
       <p>JobsFinder &#169; 2017. Privacy Policy</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </section>
 
 
 <!-- Section 7 (Google Block) -->
 <section id="section-7-wrapper">
   <div id="map"></div>
-    <script type="text/javascript" src="assets/js/maps.js"></script>
+    <!--<script type="text/javascript" src="assets/js/maps.js"></script>-->
   <!-- API KEY -   AIzaSyCrz5gl3tBhppQfNcM6E1MLV4QR0-aX9Ys -->
 </section>
 
@@ -345,6 +365,7 @@
 <!-- Script Tags -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 
 <!-- Google Maps Script -->
 <script async defer
