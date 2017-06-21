@@ -7,6 +7,7 @@
 @import 'settings';
 @import 'foundation';
 
+
 @import '../../../bower_components/fontawesome/scss/font-awesome.scss'; // Font-awesome
 @import '../../../bower_components/foundation-font-awesome-buttons/src/_ffab.scss'; // Font-awesome
 
@@ -59,5 +60,5 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Custom Styling Script
+// Custom Styling Sheet
 @import 'custom.scss';
