@@ -153,10 +153,9 @@ ul.dropdown.menu > li a:hover {
   width: 100%;
   height: auto;
   padding-top: 60px;
-
   .row {
     padding-bottom: 10px;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -180,23 +179,38 @@ span.badge {
   margin: 10px;
 }
 
+
 .row .about-left-text {
   margin-top: 20px;
   font-family: $main-font;
+  text-align: right;
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
   h3 {
     color: #24be88;
     font-size: 26px;
     font-weight: 900;
+    @include breakpoint(medium down) {
+      text-align: center;
+    }
   }
 }
 
 .row .about-right-text {
   margin-top: 20px;
   font-family: $main-font;
+  text-align: left;
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
   h3 {
     color: #24be88;
     font-size: 26px;
     font-weight: 900;
+    @include breakpoint(medium down) {
+      text-align: center;
+    }
   }
 }
 
@@ -211,6 +225,10 @@ span.badge {
   margin-top: 8em;
   background-image: url("../img/3/parallax-section.jpg");
   @include parallax;
+  @media screen and (max-width: 1570px) {
+    height: auto;
+    max-height: 100%;
+  }
 }
 
 .row .section-3-title {
@@ -219,12 +237,31 @@ span.badge {
   color: #FFFFFF;
   margin-bottom: 30px;
   font-family: 'raleway', sans-serif;
+  @include breakpoint(large only) {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  @include breakpoint(medium down) {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
 }
 
 #section-3-left {
   font-size: 2em;
   color: $green;
   line-height: 1.8;
+  text-align: right;
+  @include breakpoint(large only) {
+    font-size: 1.8em;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  @include breakpoint(medium down) {
+    font-size: 1.6em;
+    text-align: justify;
+  }
 }
 
 #section-3-right {
@@ -233,6 +270,15 @@ span.badge {
   font-weight: 600;
   padding-top: 12px;
   line-height: 1.85;
+  text-align: left;
+  @include breakpoint(large only) {
+    font-size: 1em;
+    padding-top: 0px;
+    text-align: justify;
+  }
+  @include breakpoint(medium down) {
+    text-align: justify;
+  }
 }
 
 
@@ -240,7 +286,7 @@ span.badge {
 
 #section-4-wrapper {
   width: 100%;
-  height: 650px;
+  height: auto;
   padding-top: 60px;
 }
 
