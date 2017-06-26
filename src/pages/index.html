@@ -1,6 +1,40 @@
 
 <!-- Section 1 (Front) -->
+
+
 <section id="section-1-wrapper">
+  <nav class="navigation-wrapper row">
+    <div class="title-bar" data-responsive-toggle="example-menu"  data-hide-for="large"> <!-- data-hide-for="medium" -->
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="example-menu">
+      <div class="top-bar-left">
+        <img src="assets/img/1/logo.png"/>
+      </div>
+
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Candidate</a></li>
+          <li>
+            <a href="#">About<span class="ffab fa-chevron-down arrow"></span></a>
+            <ul class="menu vertical">
+              <li><a href="#">List 1</a></li>
+              <li><a href="#">List 2</a></li>
+              <li><a href="#">List 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><button class="hollow button success" id="button-sign" href="#">Sign in</button></li>  <!-- Button -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div id="image-wrapper">
     <!-- Slick Carousel -->
     <div class="your-class">
@@ -11,42 +45,18 @@
   </div>
 
 
-  <div class="row" id="navigation-wrapper">
-      <div id="navigation-bar" class="top-bar">
-        <!-- Logo -->
-        <div class="top-bar-left">
-          <img src="assets/img/1/logo.png"/>
-        </div>
 
 
-        <div class="top-bar-right "> <!-- Nav for Larger Screens -->
-          <ul class="medium-horizontal dropdown menu" data-dropdown-menu>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Candidates</a></li>
 
-            <li>  <!-- Drop Down -->
-              <a href="#">About</a>
-              <ul class="menu">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-              </ul>
-            </li>
 
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><button class="hollow button success" id="button-sign" href="#">Sign in</button></li>  <!-- Button -->
-          </ul>
-        </div>
-      </div>
-  </div>
+
+
 
   <!-- Section 1 Content -->
   <div class="row">
     <div id="section-1-content">
       <div id="title-wrapper" class="small-12 columns">
-        <h1>Staffing <span class="bold-title">solutions</span> for you</h1>
+        <h1>Staffing</br><span class="bold-title">solutions</span> for you</h1>
       </div>
       <div class="small-12 columns">
         <a href="#" id="button-text-style" class="button ffab fa-chevron-right large-3">Search a Job</a>
