@@ -8,10 +8,10 @@
   background-size: cover;
 }
 
-
 // Custom Variables
 $main-font: 'raleway', sans-serif;
 $alt-grey: #606060;
+$alt-black: #313231;
 
 #section-1-wrapper {
   width: 100%;
@@ -28,20 +28,7 @@ $alt-grey: #606060;
       height: auto;
     }
   }
-  #navigation-wrapper {
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    li {
-      font-family: 'raleway', sans-serif;
-      font-weight: 600;
-    }
-    @include breakpoint(medium down) {
-      top: 0px;
-    }
-  }
+
   #section-1-content {
     text-align: center;
     margin: auto;
@@ -52,9 +39,12 @@ $alt-grey: #606060;
     right: 0;
     top: 0;
     bottom: 20%;
-  //  background-color: yellow;
+  //background-color: yellow;
     #title-wrapper {
       margin-bottom: 50px;
+      @include breakpoint(small only) {
+        margin-bottom: 20px;
+      }
     }
     h1 {
       font-size: 5em;
@@ -68,7 +58,7 @@ $alt-grey: #606060;
         font-size: 2em;
         margin-bottom: 10px;
       }
-      @include breakpoint(400px down) {
+      @include breakpoint(420px down) {
         font-size: 1.4em;
       }
     }
@@ -92,7 +82,7 @@ $alt-grey: #606060;
         @include breakpoint(520px down) {
           width: 20%;
         }
-        @include breakpoint(400px down) {
+        @include breakpoint(420px down) {
           width: 22.50%;
         }
       }
@@ -107,7 +97,7 @@ $alt-grey: #606060;
         font-size: 18px;
         margin-bottom: 5px;
       }
-      @include breakpoint(400px down) {
+      @include breakpoint(420px down) {
         font-size: 13px;
       }
     }
@@ -120,76 +110,63 @@ $alt-grey: #606060;
   }
 }
 
-// Changes dropdown submenu background colour
-.dropdown.menu > li.opens-left > .is-dropdown-submenu {
-  background-color: $dark-gray;
-}
-
-// Changes 'Active' class colour
-.menu .active > a {
-  color: $green;
-}
-
-ul.dropdown.menu > li a:hover {
-  color: $green;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-}
 
 
-
-.top-bar {
-  background: none;
-}
-.top-bar-left {
-  padding-top: 5px;
-  img {
-    @include breakpoint(medium down) {
-      width: 135px;
-    }
-    @include breakpoint(380px down) {
-      width: 110px;
+@media (min-width: 320px) and (min-height: 550px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 30%;
     }
   }
 }
 
-.dropdown.menu {
-  background: none;
-  li a {
-    font-size: 22px;
-    @include breakpoint(medium down) {
-      font-size: 14px;
+@media (min-width: 320px) and (min-height: 635px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 40%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (min-height: 730px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 768px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 10%;
+    }
+  }
+}
+
+@media (min-width: 1250px) and (min-height: 790px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 10%;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1300px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 40%;
     }
   }
 }
 
 
-#button-sign {
-  color: #FFFFFF;
-  border: 2px solid #1fd395;
-  font-size: 20px;
-  border-radius: 3px;
-  padding: 10px;
-  font-weight: 600;
-  &:hover {
-    color: $green;
-  }
-  @include breakpoint(medium down) {
-    font-size: 14px;
+// Changes mobile menu background colour
+@media screen and (max-width: 1180px) {
+  #example-menu {
+    background-color: $alt-grey;
   }
 }
-
-.button-group {
-  opacity: 0.8;
-  font-family: 'raleway', sans-serif;
-  font-weight: 600;
-}
-
-
-
 
 // Media queries using custom sizes
 /*@media (max-height: 600px) and (min-width: 310px) {
@@ -225,6 +202,153 @@ ul.dropdown.menu > li a:hover {
   }
 }
 */
+
+
+
+
+.navigation-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  li {
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+  }
+  @include breakpoint(medium down) {
+    width: 100%;
+    top: 0;
+  }
+}
+
+
+.top-bar {
+  background: none;
+}
+.top-bar-left {
+  padding-top: 5px;
+  img {
+    @include breakpoint(medium down) {
+      width: 135px;
+    }
+    @include breakpoint(380px down) {
+      width: 110px;
+    }
+  }
+}
+
+// Mobile bar
+.title-bar {
+  background-color: $alt-black;
+  text-align: right;
+  padding-right: 20px;
+  display: block;
+}
+
+.dropdown.menu {
+  background: none;
+  z-index: 2;
+  .arrow {
+    font-size: 16px;
+    margin-left: -30px;
+    @include breakpoint(medium down) {
+      font-size: 12px;
+      margin-left: -40px;
+    }
+  }
+  .ffab::after {
+    background: none;
+  }
+  li a {
+    font-size: 22px;
+    @include breakpoint(medium down) {
+      font-size: 14px;
+    }
+  }
+}
+
+
+#button-sign {
+  color: #FFFFFF;
+  border: 2px solid #1fd395;
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: 600;
+  &:hover {
+    color: $green;
+  }
+  @include breakpoint(medium down) {
+    font-size: 14px;
+  }
+}
+
+.button-group {
+  opacity: 0.8;
+  font-family: 'raleway', sans-serif;
+  font-weight: 600;
+}
+
+
+// Changes dropdown submenu background colour
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+  background-color: $dark-gray;
+}
+
+// Changes 'Active' class colour
+.menu .active > a {
+  color: $green;
+}
+
+ul.dropdown.menu > li a:hover {
+  color: $green;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+
+// To stop flash of unstyled content
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Section 2 Styling */
 
