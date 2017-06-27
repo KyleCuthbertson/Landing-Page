@@ -1,5 +1,4 @@
 
-
 // Custom Mixins
 @mixin parallax {
   background-attachment: fixed;
@@ -13,10 +12,11 @@ $main-font: 'raleway', sans-serif;
 $alt-grey: #606060;
 $alt-black: #313231;
 
+
+// Section 1 Styling
 #section-1-wrapper {
   width: 100%;
   height: auto;
-  //z-index: -99;
   #image-wrapper {
     width: 100%;
     height: 100%;
@@ -39,7 +39,6 @@ $alt-black: #313231;
     right: 0;
     top: 0;
     bottom: 20%;
-  //background-color: yellow;
     #title-wrapper {
       margin-bottom: 50px;
       @include breakpoint(small only) {
@@ -110,102 +109,6 @@ $alt-black: #313231;
   }
 }
 
-
-
-@media (min-width: 320px) and (min-height: 550px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 30%;
-    }
-  }
-}
-
-@media (min-width: 320px) and (min-height: 635px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 40%;
-    }
-  }
-}
-
-@media (min-width: 320px) and (min-height: 730px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 50%;
-    }
-  }
-}
-
-@media (min-width: 1024px) and (min-height: 768px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 10%;
-    }
-  }
-}
-
-@media (min-width: 1250px) and (min-height: 790px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 10%;
-    }
-  }
-}
-
-@media (min-width: 1024px) and (min-height: 1300px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 40%;
-    }
-  }
-}
-
-
-// Changes mobile menu background colour
-@media screen and (max-width: 1180px) {
-  #example-menu {
-    background-color: $alt-grey;
-  }
-}
-
-// Media queries using custom sizes
-/*@media (max-height: 600px) and (min-width: 310px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 40%;
-      height: 20%;
-    }
-  }
-}
-
-@media (max-height: 900px) and (min-width: 600px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 35%;
-    }
-  }
-}
-
-@media (min-height: 600px) and (min-width: 600px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 40%;
-    }
-  }
-}
-
-@media (max-height: 400px) {
-  #section-1-wrapper {
-    #section-1-content {
-      bottom: 10%;
-    }
-  }
-}
-*/
-
-
-
-
 .navigation-wrapper {
   position: absolute;
   z-index: 1;
@@ -255,6 +158,7 @@ $alt-black: #313231;
   .arrow {
     font-size: 16px;
     margin-left: -30px;
+    margin-right: -20px;
     @include breakpoint(medium down) {
       font-size: 12px;
       margin-left: -40px;
@@ -271,7 +175,7 @@ $alt-black: #313231;
   }
 }
 
-
+// Sign in button
 #button-sign {
   color: #FFFFFF;
   border: 2px solid #1fd395;
@@ -286,7 +190,6 @@ $alt-black: #313231;
     font-size: 14px;
   }
 }
-
 .button-group {
   opacity: 0.8;
   font-family: 'raleway', sans-serif;
@@ -314,7 +217,75 @@ ul.dropdown.menu > li a:hover {
 }
 
 
-// To stop flash of unstyled content
+
+// Media queries using custom sizes
+@media (min-width: 320px) and (min-height: 550px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 30%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (min-height: 635px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 45%;
+    }
+  }
+}
+
+@media (min-width: 320px) and (min-height: 730px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 768px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 10%;
+    }
+  }
+}
+
+@media (min-width: 1250px) and (min-height: 790px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 10%;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1300px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 40%;
+    }
+  }
+}
+
+@media (min-width: 1180px) and (min-height: 570px) {
+  #section-1-wrapper {
+    #section-1-content {
+      bottom: 5%;
+    }
+  }
+}
+
+// Changes mobile menu background colour
+@media screen and (max-width: 1180px) {
+  #example-menu {
+    background-color: $alt-grey;
+  }
+}
+
+
+
+
+// To stop the flash of unstyled content
 .no-js {
   @include breakpoint(small only) {
     .top-bar {
@@ -328,25 +299,6 @@ ul.dropdown.menu > li a:hover {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -594,6 +546,7 @@ span.badge {
   background-image: url("../img/5/parallax-section-two.jpg");
   @include parallax;
 
+  // Percentage Wheels
   .row svg {
     margin: 0;
     @include breakpoint(small only) {
